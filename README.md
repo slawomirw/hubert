@@ -26,11 +26,11 @@ Zainstaluj GIT pobierając plik z (https://git-scm.com/download/win).
   
   > cd zadanie1
   
-  > echo "<head></head><body></body>" >> index.html
+  > echo "\<head\>\<\/head\>\<body\>\<\/body\>" \>\> index.html
   
   > git add .
   
-  > git config --global user.email "<adres email>"
+  > git config --global user.email "adres@email"
 
 ### Założenie konta GitHub
   
