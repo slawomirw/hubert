@@ -30,6 +30,9 @@ Zainstaluj GIT pobierając plik z (https://git-scm.com/download/win).
   
   > git add .
   
+  > git config --global user.email "<adres email>"
+
+### Założenie konta GitHub
   
-  
-  
+  Wejdź na https://github.com/ i wybierz [Sign In]. Podaj adres email oraz nowe hasło.
+ 
