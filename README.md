@@ -9,5 +9,7 @@ Zainstaluj GIT pobierając plik z (https://git-scm.com/download/win).
 1) Uruchom program GIT CMD
 2) napisz: 
   > mkdir hubert-projekt <enter>
-  > cd hubert-projekt
+  
+  > cd hubert-projekt <enter>
+  
   
