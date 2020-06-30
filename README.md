@@ -34,7 +34,7 @@ Zainstaluj GIT pobierając plik z (https://git-scm.com/download/win).
 
 ### Założenie konta GitHub
   
-  Wejdź na https://github.com/ i wybierz [Sign In]. Podaj adres email oraz nowe hasło.
+  Wejdź na https://github.com/ i wybierz [Sign Up]. Podaj adres email oraz nowe hasło.
  
 ### Zapisanie dodanych/zmienionych plików
 
