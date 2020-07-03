@@ -4,20 +4,20 @@
 <b>Formularz podania do pracy</b></br>
 <i>Proszę o uzupełnienie formularza. Obowiązkowe pola oznaczone są *</i></br>
 
-
-</body>
+ 
+<form action="..."> 
 <label for="imie">Imię</label>
 <input id="imie" name="i_imie"> 
-<p>Nazwisko*:</p>
-<input name="Nazwisko"> 
-<p>Telefon:</p>
-<input name="Telefon">
-<p>E-mail*:</p>
-<input name="E-mail">
-<p>Wiek*:</p> 
-<input name="Wiek">
-<p>Płeć:</p> 
-<form action="...">
+<label for="Nazwisko">Nazwisko:</label>
+<input id="Nazwisko" name="n_Nazwisko"> 
+<label for="Telefon">Telefon:</label>
+<input id="Telefon" name="t_Telefon">
+<label for="E-mail">E-mail:</label>
+<input id="E-mail" name="e_E-mail">
+<label for="Wiek">Wiek:</label> 
+<input id="Wiek" name="w_Wiek">
+<label for=:Płeć">Płeć:</label> 
+<input id="Płeć"> 
 	<select name="Płeć">
 		<option>Kobieta</option>
 		<option>Mężczyzna</option>
@@ -28,3 +28,8 @@
 <form action="...">
 	<textarea name="Motywacja" cols="20" rows="5"></textarea>
 </form>
+
+
+</body> 
+
+
