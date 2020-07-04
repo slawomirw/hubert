@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<script type="text/javascript">
+			function submitFun()
+			{
+				
+				var imie = document.getElementById("imie").value;
+				var nazw = document.getElementById("nazwisko").value;
+				document.getElementById("info").innerHTML = " Nazywam się "+imie+" "+nazw+" ";
+				window.confirm(" Nazywam się "+imie+" "+nazw+" ");
+				return true;
+			}
+		</script>
+		<form style="margin: 0 auto; width: 70%; vertical-align: center; horizontal-align: center; background-color: lightgrey; font-size: 5px; font-family: calibri;" onsubmit="submitFun()">
+			<label for="imie">Imię:</label>
+			<input id="imie">
+			<br/>
+			<label for="nazwisko">Nazwisko:</label>
+			<input id="nazwisko">
+			<br/>
+			<button type="submit" style="font-size: 20px; width: 100px; height: 40px; font-weight: bold; background-color: white">Submit</button>
+		</form>
+		<div id="info"></div>
+	</body>
+</html>
