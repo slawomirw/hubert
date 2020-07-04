@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<meta charset="UTF-8">
+	</head>
+	<body onload="onLoadImages()">
+		<script>
+			function onSmallSize(img) {
+				img.width = "50";
+				img.height = "50";
+			}
+			function onNormalSize(img) {
+				img.width = "100";
+				img.height = "100";
+			}
+			function onLoadImages() {
+				var image = new Image();
+				image.onload = function () {
+					document.getElementById('imgId1').setAttribute('src', this.src);
+				};
+				image.src = 'img1.jpg';
+				image = new Image();
+				image.onload = function () {
+					document.getElementById('imgId2').setAttribute('src', this.src);
+				};
+				image.src = 'img2.jpg';
+				image = new Image();
+				image.onload = function () {
+					document.getElementById('imgId3').setAttribute('src', this.src);
+				};
+				image.src = 'img3.jpg';
+				image = new Image();
+				image.onload = function () {
+					document.getElementById('imgId4').setAttribute('src', this.src);
+				};
+				image.src = 'img4.jpg';
+			}
+		</script>
+		<div style="width: 100%; display: table;">
+			<div style="display: table-row">
+				<div style="padding: 10px; height: 110px; width: 110px; background-color: lightgrey; display: table-cell">
+					<img id="imgId1" src="." onmouseover="onSmallSize(this)" onmouseout="onNormalSize(this)">
+				</div>
+				<div style="padding: 10px; height: 110px; width: 110px; background-color: lightgrey; display: table-cell">
+					<img id="imgId2" src="." onmouseover="onSmallSize(this)" onmouseout="onNormalSize(this)">
+				</div>
+				<div style="padding: 10px; height: 110px; width: 110px; background-color: lightgrey; display: table-cell">
+					<img id="imgId3" src="." onmouseover="onSmallSize(this)" onmouseout="onNormalSize(this)">
+				</div>
+				<div style="padding: 10px; height: 110px; width: 110px; background-color: lightgrey; display: table-cell">
+					<img id="imgId4" src="." onmouseover="onSmallSize(this)" onmouseout="onNormalSize(this)">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
